@@ -1,0 +1,919 @@
+{
+	"siteVersion": "1.135.0",
+	"monster": [
+		{
+			"name": "Animated Tome",
+			"source": "",
+			"page": 0,
+			"size": "S",
+			"type": "construct",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 16,
+				"formula": "5d6"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 50,
+					"condition": "it can hover."
+				},
+				"canHover": true
+			},
+			"str": 8,
+			"dex": 18,
+			"con": 11,
+			"int": 20,
+			"wis": 14,
+			"cha": 6,
+			"passive": 12,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Burn (Antonidas' Self Help Guide to Standing in Fire only)",
+					"entries": [
+						"Any hostile targets that start their turn or come within 5 ft. of the tome take 5 ({@damage 2d4}) fire damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Arcane Bomb (The Anarchist Arcanist only)",
+					"entries": [
+						"Ranged Spell",
+						"Attack: {@hit 7} to hit, range 120 ft., one target. {@h}4 ({@damage 1d8}) force damage and all targets within 5 ft. of the target must succeed on a {@dc 15} Dexterity saving throw or take 3 ({@damage 1d6}) force damage.",
+						"Shadow Bolt (Wander's Colossal Book of Shadow Puppets only). Ranged Spell Attack: {@hit 7} to hit, range 120 ft., one target. {@h}5 ({@damage 1d10}) necrotic damage"
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"N",
+				"O"
+			]
+		},
+		{
+			"name": "Chillheart's Phylactery",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "construct",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 68,
+				"formula": "8d8 + 32"
+			},
+			"speed": {
+				"walk": 0
+			},
+			"str": 11,
+			"dex": 6,
+			"con": 18,
+			"int": 20,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+7",
+				"int": "+8",
+				"wis": "+5",
+				"cha": "+6"
+			},
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The phylactery has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Soul Barrier",
+					"entries": [
+						"The phylactery is immune to damage while",
+						"Instructor Chillheart's physical body is alive."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Animate Tomes",
+					"entries": [
+						"Fragments of Chillheart's soul animate 3 ({@dice 2d2}) tomes of magic around the Library. Roll from the table below to determine the tomes."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"languageTags": [
+				"C"
+			]
+		},
+		{
+			"name": "Instructor Chillheart",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 105,
+				"formula": "14d8 + 42"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 16,
+			"int": 19,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+6",
+				"int": "+7",
+				"wis": "+5",
+				"cha": "+6"
+			},
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Chillheart has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Ice Wall",
+					"entries": [
+						"Chillheart summons a massive ice wall that covers the eastern wall of The Reliquary. At the start of her turns, the ice wall expands 5 ft. west, covering the entire length and height of the room.",
+						"When a creature touches this wall, it is dealt 44 ({@damage 8d10}) cold damage. This wall melts when",
+						"Chillheart's physical body dies,"
+					]
+				},
+				{
+					"name": "Phylactery",
+					"entries": [
+						"When Instructor Chillheart's physical body dies, the foul magic that animated her escapes back to her phylactery."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Instructor Chillheart makes two different attacks."
+					]
+				},
+				{
+					"name": "Touch of the Grave",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage plus 5 ({@damage 1d10}) cold damage."
+					]
+				},
+				{
+					"name": "Wrack Soul",
+					"entries": [
+						"A hostile creature within 60 ft. must succeed on a {@dc 15} Wisdom saving throw or are cursed. At the end of their next turn they take 9 ({@damage 2d8}) necrotic damage and another hostile creature must succeed on the same saving throw or be cursed by Wrack Soul."
+					]
+				},
+				{
+					"name": "Ice Wrath",
+					"entries": [
+						"A hostile creature within 60 ft. is wreathed in ice for 18 seconds. Any creatures that start their turn or come within 10 ft. of the target take 5 ({@damage 1d10}) cold damage and have their speed reduced by 10 ft."
+					]
+				},
+				{
+					"name": "Frigid Grasp",
+					"entries": [
+						"A patch of ice explodes underneath a target within 60 ft. All creatures within 10 ft. of the target must succeed on a {@dc 15} Dexterity saving throw or take 10 ({@damage 3d6}) cold damage. On a success, take half as much damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"C",
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Scholomance Student",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 12,
+			"con": 14,
+			"int": 16,
+			"wis": 12,
+			"cha": 14,
+			"passive": 11,
+			"resist": [
+				"fire",
+				"necrotic"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"name": "Shadow Bolt",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 120 ft., one target. {@h}11 ({@damage 2d10}) necrotic damage."
+					]
+				},
+				{
+					"name": "Shadow Nova",
+					"entries": [
+						"A wave of necrotic energy erupts from a target within 60 ft. All creatures within 10 ft. of the target must succeed on a {@dc 13} Wisdom saving throw or take 10 ({@damage 3d6}) necrotic damage. On a success, take half as much damage.",
+						"Fire Breath Potion (Recharges on a Short or Long"
+					]
+				},
+				{
+					"name": "Rest)",
+					"entries": [
+						"All creatures within 15 ft. and in front of the student must succeed on a {@dc 15} Dexterity saving throw or take 18 ({@damage 4d8}) fire damage. On a success, take half as much damage."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"N"
+			]
+		},
+		{
+			"name": "Scholomance Neophyte",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"high elf"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 52,
+				"formula": "7d8 + 21"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 12,
+			"con": 16,
+			"int": 16,
+			"wis": 12,
+			"cha": 12,
+			"passive": 11,
+			"resist": [
+				"cold",
+				"necrotic"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Necrotic Pact",
+					"entries": [
+						"When the student or an undead creature summoned by it takes damage, the damage is divided evenly between the student and all of its summoned undead creatures."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shadow Incineration",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 120 ft., one target. {@h}5 ({@damage 1d10}) necrotic damage plus 5 ({@damage 1d10}) fire damage."
+					]
+				},
+				{
+					"name": "Bound Servant",
+					"entries": [
+						"The student summons a friendly",
+						"Boneguard within 20 ft. which shares its initiative."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"N"
+			]
+		},
+		{
+			"name": "Scholomance Acolyte",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 12,
+			"con": 14,
+			"int": 16,
+			"wis": 12,
+			"cha": 14,
+			"passive": 11,
+			"resist": [
+				"cold",
+				"necrotic"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Unbound",
+					"entries": [
+						"When the student would be reduced to 0 hit points, its spirit separates from its body. During this effect, it is immune to damage and can only use Spirit Barrage as an action. At the end of its next turn, the spirit and student are defeated."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shadow Bolt",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 120 ft., one target. {@h}11 ({@damage 2d10}) necrotic damage."
+					]
+				},
+				{
+					"name": "Shatter Soul",
+					"entries": [
+						"A creature within 60 ft. must succeed on a {@dc 13} Wisdom saving throw or take 10 ({@damage 3d6}) necrotic damage and become Fatigued for 1 minute. On a success, take half as much damage."
+					]
+				},
+				{
+					"name": "Spirit Barrage (only when Unbound)",
+					"entries": [
+						"All hostile creatures in line of sight within 120 ft. must succeed on a {@dc 13} Dexterity saving throw or take 11 ({@damage 2d10}) necrotic damage."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"N"
+			]
+		},
+		{
+			"name": "Risen Guard",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d8 + 30"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 6,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The skeleton makes two attacks."
+					]
+				},
+				{
+					"name": "Unholy Blade",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage and the target's AC is reduced by 1 for 1 minute. This effect stacks."
+					]
+				},
+				{
+					"name": "Impale",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range",
+						"30/120 ft., one target. {@h}14 ({@damage 3d8 + 1}) piercing damage and the target's speed is reduced to 10 ft."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Reanimated Corpse",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 12,
+			"int": 6,
+			"wis": 10,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Dark Plague",
+					"entries": [
+						"The zombie emits a cloud of disease in a 5-foot sphere around it. When a creature enters this area for the first time on a turn or starts its turn there, it must succeed on a {@dc 13} Constitution saving throw or take 7 ({@damage 2d6}) poison damage. On a success, it takes half as much damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Strike",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
+		},
+		{
+			"name": "Krastinovian Carver",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 12,
+			"wis": 14,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Boiling Bloodthirst",
+					"entries": [
+						"The carver starts with one stack of this effect. For each stack, all damage dealt by and dealt to the carver is increased by 1. When the carver is defeated, all Krastinovian Carvers within 25 ft. of it gain a stack of Boiling Bloodthirst for each stack it had on death."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The carver makes two attacks."
+					]
+				},
+				{
+					"name": "Bloody Cleaver",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Flesh Horror",
+			"source": "",
+			"page": 0,
+			"size": "L",
+			"type": "construct",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 95,
+				"formula": "10d10 + 40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 19,
+			"int": 6,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's attacks are magical."
+					]
+				},
+				{
+					"name": "Meat Grafts",
+					"entries": [
+						"The golem has four Meat Grafts attached it. These grafts have 10 hit points each but otherwise share the Flesh Horror's stats. The grafts can only be damaged if they are the target of an attack. A creature can use a bonus action to make a {@dc 14} Perception check to identify one graft so it can be targeted.",
+						"At the start of the golem's turn, it regains 10 hit points for each Meat Graft attached to it. When a graft is defeated, the golem's maximum hit points are reduced by 20."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d12 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Failed Student",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 18,
+				"formula": "4d8"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 11,
+			"int": 8,
+			"wis": 10,
+			"cha": 4,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Student of Scholomance",
+					"entries": [
+						"Failed students gain extra abilities based on what room they are found in."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}
