@@ -1,0 +1,341 @@
+{
+	"siteVersion": "1.135.0",
+	"monster": [
+		{
+			"name": "Rattlegore",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "L",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 208,
+				"formula": "16d10 + 48"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 17,
+			"int": 6,
+			"wis": 12,
+			"cha": 10,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				{
+					"resist": [
+						"piercing and slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Unholy Blades",
+					"entries": [
+						"Rattlegore's attacks are magical."
+					]
+				},
+				{
+					"name": "Soulflame",
+					"entries": [
+						"At the start of Rattlegore's turn, roll from the table below. The corresponding bone piles ignite. All targets within 5 ft. of the ignited bone piles must succeed on a {@dc 15} Dexterity saving throw or take 9 ({@damage 2d8}) fire damage. On a success, take half as much damage.",
+						"Roll Bone Piles",
+						"1—2 N, S 3 W, E 4 SW, SE, N 5 NW, NE, S 6 NW, NE, SW, SE 7 N, W, E, S 8 NW, W, SW, S, SE, E, NE, N"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Rattlegore makes three attacks, two with Rusting Blade and one with Bone Spike."
+					]
+				},
+				{
+					"name": "Rusting Blade",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage and Rusting Blade deals one additional bonus damage on all future hits. This effect stacks and on every third stack, Rattlegore's speed is decreased by 5 ft."
+					]
+				},
+				{
+					"name": "Bone Spike",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range",
+						"40/80 ft., one target. {@h}21 ({@damage 5d6 + 4}) piercing damage and the target must succeed on a {@dc 16} Strength saving throw or be knocked back 20 ft.",
+						"This must be used on a creature with Bone Armor if possible."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"F",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Phantasmal Image",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 9,
+				"formula": "2d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 12,
+			"con": 16,
+			"int": 19,
+			"wis": 14,
+			"cha": 14,
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The illusion is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The illusion has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Flawed",
+					"entries": [
+						"The illusion has minor differences from its creator such as eye color, freckles, hairstyle, etc. A creature can use a bonus action to make a {@dc 15}",
+						"Perception check to determine whether the illusion is real or not."
+					]
+				},
+				{
+					"name": "Flash Bang",
+					"entries": [
+						"When the illusion is defeated, all hostile creatures within 40 ft. must succeed on a {@dc 15} Constitution saving throw or take 5 ({@damage 1d10}) force damage. On a success, take half as much damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Whirl of Illusion",
+					"entries": [
+						"A creature within 120 ft. and line of sight takes 3 force damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"O"
+			]
+		},
+		{
+			"name": "Jandice Barov",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 120,
+				"formula": "16d8 + 48"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 12,
+			"con": 16,
+			"int": 19,
+			"wis": 14,
+			"cha": 14,
+			"save": {
+				"int": "+8",
+				"wis": "+6",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+6"
+			},
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"Jandice is immune to any spell or effect that would alter her form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Jandice has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Phantasmal Images",
+					"entries": [
+						"When Jandice is reduced to 40 or 80 hit points, she immediately vanishes from sight and any effects on her end. She reappears with 9 ({@dice 2d4 + 4}) Phantasmal Images distributed through the room. While these images are active, she can only use Whirl of Illusion as her action.",
+						"After she has taken 15 damage since this effect started, the remaining Phantasmal Images dissipate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Wondrous Rapidity",
+					"entries": [
+						"All creatures in a 45 ft. cone must succeed on a {@dc 15} Constitution saving throw or take 17 ({@damage 5d6}) force damage. On a success, take half has much damage. If at least 2 creatures fail this throw, Jandice may use a bonus"
+					]
+				},
+				{
+					"name": "Gravity Flux {@recharge 5}",
+					"entries": [
+						"A 20 ft. field of shadow magic erupts within 100 ft. When a creature enters this area for the first time on a turn or starts its turn there, it takes 11 ({@damage 2d10}) necrotic damage plus 11 ({@damage 2d10}) force damage, is knocked back a number of feet equal to the damage it took, and is Blinded until the end of its next turn. This field lasts for 30 seconds and only one may be active at a time."
+					]
+				},
+				{
+					"name": "Whirl of Illusion",
+					"entries": [
+						"A creature within 120 ft. and line of sight takes 3 force damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			]
+		}
+	]
+}
