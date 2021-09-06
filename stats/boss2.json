@@ -1,0 +1,510 @@
+{
+	"siteVersion": "1.135.0",
+	"monster": [
+		{
+			"name": "Darkmaster Gandling",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 135,
+				"formula": "18d8 + 54"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 16,
+			"int": 19,
+			"wis": 18,
+			"cha": 16,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "9",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Gandling makes three attacks."
+					]
+				},
+				{
+					"name": "Incinerate",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, range 120 ft., one target. {@h}16 ({@damage 3d10}) fire damage."
+					]
+				},
+				{
+					"name": "Immolate",
+					"entries": [
+						"All targets in a 30 ft. cone must succeed on a {@dc 15} Constitution saving throw or take 14 ({@damage 4d6}) fire damage and are vulnerable to fire damage until the start of Gandling's next turn. On a success, take half has much damage."
+					]
+				},
+				{
+					"name": "Rise",
+					"entries": [
+						"(Recharge 5-6). Gandling raises 5 ({@dice 2d4}) Failed",
+						"Students within 30 ft. of him. They are friendly to him and will obey his commands. While a Failed",
+						"Student is within 30 ft. of him, Gandling is resistant to all damage."
+					]
+				},
+				{
+					"name": "Harsh Lesson {@recharge 4}",
+					"entries": [
+						"Gandling teleports a hostile target within 50 ft. of him to one of the adjoining rooms. Roll from the following table to determine which room the target is sent to. Reroll if the room has already been used.",
+						"Roll Room 1 The Coven 2 Hall of the Damned 3 Hall of Secrets 4 Vault of the Ravenian 5 Barov Family Vault 6 The Shadow Vault"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F"
+			]
+		},
+		{
+			"name": "Professor Slate",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 104,
+				"formula": "16d8 + 32"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 14,
+			"int": 18,
+			"wis": 14,
+			"cha": 14,
+			"passive": 12,
+			"resist": [
+				"fire"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Potions Master",
+					"entries": [
+						"At the start of Professor Slate's turn, roll from the table below twice to determine which"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Roll Potion Color",
+					"entries": [
+						"1-2 Fire Breath Potion red",
+						"3-4 Toxic Potion green",
+						"5-6 Potion of Brutish Force orange"
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Professor Slate makes two attacks."
+					]
+				},
+				{
+					"name": "Brutish Strike",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Fire Breath Potion",
+					"entries": [
+						"All creatures within 30 ft. and in front of Slate must succeed on a {@dc 17} Dexterity saving throw or take 22 ({@damage 4d10}) fire damage. On a success, take half as much damage."
+					]
+				},
+				{
+					"name": "Toxic Potion",
+					"entries": [
+						"Slate throws a vial at a target within 60 ft. All creatures within 10 ft. of the target must succeed on a {@dc 17} Constitution saving throw or take 10 ({@damage 3d6}) poison damage and are Poisoned. On a success, take half as much damage."
+					]
+				},
+				{
+					"name": "Potion of Brutish Force",
+					"entries": [
+						"Slate gains a +3 bonus to his Strength until the start of his next turn and makes two additional Brutish Strikes this turn."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Lilian's Soul",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 60,
+				"formula": "8d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 16,
+			"int": 12,
+			"wis": 18,
+			"cha": 14,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Gravewalker",
+					"entries": [
+						"When Lilian's Soul is reduced to 0 hit points, her corpse reanimates. Use the Lilian Voss statblock, ignoring \"Unwilling Vessel\"."
+					]
+				},
+				{
+					"name": "Blazing Soul",
+					"entries": [
+						"At the start of the soul's turn, all hostile creatures in line of sight take 4 ({@damage 1d8}) fire damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Lilian's Soul makes two attacks."
+					]
+				},
+				{
+					"name": "Unleashed Anger",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 4}) piercing damage and all hostile creatures in line of sight take 4 ({@damage 1d8}) fire damage."
+					]
+				},
+				{
+					"name": "Fixate Anger",
+					"entries": [
+						"A hostile target within 40 ft. must succeed on a {@dc 16} Wisdom saving throw or is unable to move until the end of its next turn. Until the end of the soul's next turn, she has advantage on all attacks against that target."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Lilian Voss",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 60,
+				"formula": "8d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 14,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Runeblades of the Anointed",
+					"entries": [
+						"Lilian's attacks are magical and any creatures she kills cannot be resurrected."
+					]
+				},
+				{
+					"name": "Unwilling Vessel",
+					"entries": [
+						"When Lilian is reduced to 0 hit points, Lilian's Soul materializes above her corpse."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Lilian Voss makes two attacks."
+					]
+				},
+				{
+					"name": "Shadow Shiv",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d6 + 6}) piercing damage. Hit or miss, all creatures within 5 feet of the target must succeed on a {@dc 14} Wisdom saving throw or take 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Death's Grasp",
+					"entries": [
+						"All hostile targets within 40 ft. must succeed on a {@dc 14} Strength saving throw or are pulled into melee range of Lilian."
+					]
+				},
+				{
+					"name": "Dark Blaze",
+					"entries": [
+						"A 10 ft. circle of dark flames pool beneath a hostile target within 60 ft. When a creature starts its turn or enters the circle for the first time that turn, it takes 14 ({@damage 4d6}) fire damage.",
+						"The flames burn for one minute before dissipating."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Doctor Theolen Krastinov",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 120,
+				"formula": "16d8 + 48"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Frenzied Bloodthirst",
+					"entries": [
+						"Whenever Krastinov is dealt bludgeoning, slashing, or piercing damage, his AC increases by one. This effect stacks and when he reaches four stacks, Krastinov may immediately move and use the Multiattack action. All stacks are lost at the end of his turn."
+					]
+				},
+				{
+					"name": "Unholy Blades",
+					"entries": [
+						"Krastinov's attacks are magical."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Krastinov makes two attacks."
+					]
+				},
+				{
+					"name": "Rending Cleaver",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage and the target must succeed on a Constitution saving throw or are Rended. While under this effect, the target takes 3 ({@damage 1d6}) piercing damage at the start of their turn. This effect stacks and a stack is removed when the target regains at least 5 hit points."
+					]
+				},
+				{
+					"name": "Backhand",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage and the target is Stunned until the end of its next turn."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}
