@@ -30,17 +30,7 @@
 		"darkvision 60 ft."
 	],
 	"passive": 12,
-	"resist": [
-		{
-			"resist": [
-				"bludgeoning",
-				"piercing",
-				"slashing"
-			],
-			"note": "from nonmagical attacks",
-			"cond": true
-		}
-	],
+	
 	"immune": [
 		"necrotic",
 		"poison"
