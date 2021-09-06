@@ -311,12 +311,12 @@
 }
 ,
 {
-	"name": "Doctor Theolen",
+	"name": "Doctor Theolen Krastinov",
 	"source": "",
 	"page": 0,
-	"size": "K",
+	"size": "M",
 	"type": [
-		"Medium undead",
+		"undead",
 		"chaotic evil"
 	],
 	"ac": 16,
