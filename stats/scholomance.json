@@ -1,0 +1,1751 @@
+{
+	"name": "Darkmaster Gandling",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": "undead",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		14
+	],
+	"hp": {
+		"average": 135,
+		"formula": "18d8 + 54"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 13,
+	"dex": 12,
+	"con": 16,
+	"int": 19,
+	"wis": 18,
+	"cha": 16,
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"passive": 14,
+	"immune": [
+		"necrotic",
+		"poison"
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"paralyzed",
+		"petrified",
+		"poisoned",
+		"stunned"
+	],
+	"languages": [
+		"Common"
+	],
+	"cr": "9",
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Gandling makes three attacks."
+			]
+		},
+		{
+			"name": "Incinerate",
+			"entries": [
+				"{@atk rs} {@hit 7} to hit, range 120 ft., one target. {@h}16 ({@damage 3d10}) fire damage."
+			]
+		},
+		{
+			"name": "Immolate",
+			"entries": [
+				"All targets in a 30 ft. cone must succeed on a {@dc 15} Constitution saving throw or take 14 ({@damage 4d6}) fire damage and are vulnerable to fire damage until the start of Gandling's next turn. On a success, take half has much damage."
+			]
+		},
+		{
+			"name": "Rise",
+			"entries": [
+				"(Recharge 5-6). Gandling raises 5 ({@dice 2d4}) Failed",
+				"Students within 30 ft. of him. They are friendly to him and will obey his commands. While a Failed",
+				"Student is within 30 ft. of him, Gandling is resistant to all damage."
+			]
+		},
+		{
+			"name": "Harsh Lesson {@recharge 4}",
+			"entries": [
+				"Gandling teleports a hostile target within 50 ft. of him to one of the adjoining rooms. Roll from the following table to determine which room the target is sent to. Reroll if the room has already been used.",
+				"Roll Room 1 The Coven 2 Hall of the Damned 3 Hall of Secrets 4 Vault of the Ravenian 5 Barov Family Vault 6 The Shadow Vault"
+			]
+		}
+	],
+	"senseTags": [
+		"D"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"F"
+	]
+}
+,
+{
+	"name": "Professor Slate",
+	"isNamedCreature": true,
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": "undead",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		13
+	],
+	"hp": {
+		"average": 104,
+		"formula": "16d8 + 32"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 14,
+	"dex": 14,
+	"con": 14,
+	"int": 18,
+	"wis": 14,
+	"cha": 14,
+	"passive": 12,
+	"resist": [
+		"fire"
+	],
+	"immune": [
+		"necrotic",
+		"poison"
+	],
+	"languages": [
+		"Common"
+	],
+	"cr": "6",
+	"trait": [
+		{
+			"name": "Potions Master",
+			"entries": [
+				"At the start of Professor Slate's turn, roll from the table below twice to determine which"
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Roll Potion Color",
+			"entries": [
+				"1-2 Fire Breath Potion red",
+				"3-4 Toxic Potion green",
+				"5-6 Potion of Brutish Force orange"
+			]
+		},
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Professor Slate makes two attacks."
+			]
+		},
+		{
+			"name": "Brutish Strike",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Fire Breath Potion",
+			"entries": [
+				"All creatures within 30 ft. and in front of Slate must succeed on a {@dc 17} Dexterity saving throw or take 22 ({@damage 4d10}) fire damage. On a success, take half as much damage."
+			]
+		},
+		{
+			"name": "Toxic Potion",
+			"entries": [
+				"Slate throws a vial at a target within 60 ft. All creatures within 10 ft. of the target must succeed on a {@dc 17} Constitution saving throw or take 10 ({@damage 3d6}) poison damage and are Poisoned. On a success, take half as much damage."
+			]
+		},
+		{
+			"name": "Potion of Brutish Force",
+			"entries": [
+				"Slate gains a +3 bonus to his Strength until the start of his next turn and makes two additional Brutish Strikes this turn."
+			]
+		}
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"B",
+		"F",
+		"I"
+	],
+	"miscTags": [
+		"MW"
+	]
+}
+,
+{
+	"name": "Lilian's Soul",
+	"isNamedCreature": true,
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": "undead",
+	"alignment": [
+		"C",
+		"N"
+	],
+	"ac": [
+		15
+	],
+	"hp": {
+		"average": 60,
+		"formula": "8d8 + 24"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 14,
+	"dex": 18,
+	"con": 16,
+	"int": 12,
+	"wis": 18,
+	"cha": 14,
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"passive": 12,
+	"resist": [
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from nonmagical attacks",
+			"cond": true
+		}
+	],
+	"immune": [
+		"necrotic",
+		"poison"
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"grappled",
+		"paralyzed",
+		"petrified",
+		"poisoned",
+		"prone",
+		"restrained",
+		"stunned"
+	],
+	"languages": [
+		"Common"
+	],
+	"cr": "9",
+	"trait": [
+		{
+			"name": "Gravewalker",
+			"entries": [
+				"When Lilian's Soul is reduced to 0 hit points, her corpse reanimates. Use the Lilian Voss statblock, ignoring \"Unwilling Vessel\"."
+			]
+		},
+		{
+			"name": "Blazing Soul",
+			"entries": [
+				"At the start of the soul's turn, all hostile creatures in line of sight take 4 ({@damage 1d8}) fire damage."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Lilian's Soul makes two attacks."
+			]
+		},
+		{
+			"name": "Unleashed Anger",
+			"entries": [
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 4}) piercing damage and all hostile creatures in line of sight take 4 ({@damage 1d8}) fire damage."
+			]
+		},
+		{
+			"name": "Fixate Anger",
+			"entries": [
+				"A hostile target within 40 ft. must succeed on a {@dc 16} Wisdom saving throw or is unable to move until the end of its next turn. Until the end of the soul's next turn, she has advantage on all attacks against that target."
+			]
+		}
+	],
+	"senseTags": [
+		"D"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"F",
+		"P"
+	],
+	"miscTags": [
+		"MW"
+	]
+}
+,
+{
+	"name": "Lilian Voss",
+	"isNamedCreature": true,
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": "undead",
+	"alignment": [
+		"C",
+		"N"
+	],
+	"ac": [
+		15
+	],
+	"hp": {
+		"average": 60,
+		"formula": "8d8 + 24"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 14,
+	"dex": 18,
+	"con": 16,
+	"int": 12,
+	"wis": 14,
+	"cha": 14,
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"passive": 12,
+	"immune": [
+		"necrotic",
+		"poison"
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"poisoned"
+	],
+	"languages": [
+		"Common"
+	],
+	"cr": "9",
+	"trait": [
+		{
+			"name": "Runeblades of the Anointed",
+			"entries": [
+				"Lilian's attacks are magical and any creatures she kills cannot be resurrected."
+			]
+		},
+		{
+			"name": "Unwilling Vessel",
+			"entries": [
+				"When Lilian is reduced to 0 hit points, Lilian's Soul materializes above her corpse."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Lilian Voss makes two attacks."
+			]
+		},
+		{
+			"name": "Shadow Shiv",
+			"entries": [
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d6 + 6}) piercing damage. Hit or miss, all creatures within 5 feet of the target must succeed on a {@dc 14} Wisdom saving throw or take 7 ({@damage 2d6}) necrotic damage."
+			]
+		},
+		{
+			"name": "Death's Grasp",
+			"entries": [
+				"All hostile targets within 40 ft. must succeed on a {@dc 14} Strength saving throw or are pulled into melee range of Lilian."
+			]
+		},
+		{
+			"name": "Dark Blaze",
+			"entries": [
+				"A 10 ft. circle of dark flames pool beneath a hostile target within 60 ft. When a creature starts its turn or enters the circle for the first time that turn, it takes 14 ({@damage 4d6}) fire damage.",
+				"The flames burn for one minute before dissipating."
+			]
+		}
+	],
+	"senseTags": [
+		"D"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"F",
+		"N",
+		"P"
+	],
+	"miscTags": [
+		"MW"
+	]
+}
+,
+{
+	"name": "Doctor Theolen",
+	"source": "",
+	"page": 0,
+	"size": "K",
+	"type": [
+		"Medium undead",
+		"chaotic evil"
+	],
+	"ac": 16,
+	"hp":{
+	hit points 120 (16d8+48) }
+	"speed": {
+		"walk": "30"
+	},
+	"trait": [
+		{
+			"name": "Speed 30 ft",
+			"entries": [
+				"STR DEX CON INT WIS CHA 18 (+4) 14 (+2) 16 (+3) 12 (+1) 14 (+2) 8 (-1)",
+				"Damage Immunities poison",
+				"Condition Immunities Charmed, Exhaustion, Poisoned",
+				"Senses darkvision 60 ft., passive Perception 12",
+				"Languages Common",
+				"Challenge 8 (3900 XP)"
+			]
+		},
+		{
+			"name": "Frenzied Bloodthirst",
+			"entries": [
+				"Whenever Krastinov is dealt bludgeoning, slashing, or piercing damage, his AC increases by one. This effect stacks and when he reaches four stacks, Krastinov may immediately move and use the Multiattack action. All stacks are lost at the end of his turn."
+			]
+		},
+		{
+			"name": "Unholy Blades",
+			"entries": [
+				"Krastinov's attacks are magical."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Krastinov makes two attacks."
+			]
+		},
+		{
+			"name": "Rending Cleaver",
+			"entries": [
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage and the target must succeed on a Constitution saving throw or are Rended. While under this effect, the target takes 3 ({@damage 1d6}) piercing damage at the start of their turn. This effect stacks and a stack is removed when the target regains at least 5 hit points."
+			]
+		},
+		{
+			"name": "Backhand",
+			"entries": [
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage and the target is Stunned until the end of its next turn."
+			]
+		}
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"damageTags": [
+		"B",
+		"P",
+		"S"
+	],
+	"miscTags": [
+		"MW"
+	]
+}
+,
+{
+	"name": "Rattlegore",
+	"isNamedCreature": true,
+	"source": "",
+	"page": 0,
+	"size": "L",
+	"type": "undead",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		13
+	],
+	"hp": {
+		"average": 208,
+		"formula": "16d10 + 48"
+	},
+	"speed": {
+		"walk": 40
+	},
+	"str": 18,
+	"dex": 11,
+	"con": 17,
+	"int": 6,
+	"wis": 12,
+	"cha": 10,
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"passive": 11,
+	"resist": [
+		{
+			"resist": [
+				"piercing and slashing"
+			],
+			"note": "from nonmagical attacks",
+			"cond": true
+		}
+	],
+	"immune": [
+		"necrotic",
+		"poison"
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"paralyzed",
+		"petrified",
+		"poisoned",
+		"stunned"
+	],
+	"languages": [
+		"understands Common but can't speak"
+	],
+	"cr": "9",
+	"trait": [
+		{
+			"name": "Unholy Blades",
+			"entries": [
+				"Rattlegore's attacks are magical."
+			]
+		},
+		{
+			"name": "Soulflame",
+			"entries": [
+				"At the start of Rattlegore's turn, roll from the table below. The corresponding bone piles ignite. All targets within 5 ft. of the ignited bone piles must succeed on a {@dc 15} Dexterity saving throw or take 9 ({@damage 2d8}) fire damage. On a success, take half as much damage.",
+				"Roll Bone Piles",
+				"1\u20142 N, S 3 W, E 4 SW, SE, N 5 NW, NE, S 6 NW, NE, SW, SE 7 N, W, E, S 8 NW, W, SW, S, SE, E, NE, N"
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Rattlegore makes three attacks, two with Rusting Blade and one with Bone Spike."
+			]
+		},
+		{
+			"name": "Rusting Blade",
+			"entries": [
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage and Rusting Blade deals one additional bonus damage on all future hits. This effect stacks and on every third stack, Rattlegore's speed is decreased by 5 ft."
+			]
+		},
+		{
+			"name": "Bone Spike",
+			"entries": [
+				"{@atk rw} {@hit 8} to hit, range",
+				"40/80 ft., one target. {@h}21 ({@damage 5d6 + 4}) piercing damage and the target must succeed on a {@dc 16} Strength saving throw or be knocked back 20 ft.",
+				"This must be used on a creature with Bone Armor if possible."
+			]
+		}
+	],
+	"senseTags": [
+		"D"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C",
+		"CS"
+	],
+	"damageTags": [
+		"F",
+		"P",
+		"S"
+	],
+	"miscTags": [
+		"MW",
+		"RW"
+	]
+}
+,
+{
+	"name": "Phantasmal Image",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": "undead",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		13
+	],
+	"hp": {
+		"average": 9,
+		"formula": "2d8"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 11,
+	"dex": 12,
+	"con": 16,
+	"int": 19,
+	"wis": 14,
+	"cha": 14,
+	"passive": 12,
+	"resist": [
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from nonmagical attacks",
+			"cond": true
+		}
+	],
+	"immune": [
+		"necrotic",
+		"poison"
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"grappled",
+		"paralyzed",
+		"petrified",
+		"poisoned",
+		"prone",
+		"restrained",
+		"stunned"
+	],
+	"languages": [
+		"Common"
+	],
+	"cr": "1/8",
+	"trait": [
+		{
+			"name": "Immutable Form",
+			"entries": [
+				"The illusion is immune to any spell or effect that would alter its form."
+			]
+		},
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"The illusion has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"name": "Flawed",
+			"entries": [
+				"The illusion has minor differences from its creator such as eye color, freckles, hairstyle, etc. A creature can use a bonus action to make a {@dc 15}",
+				"Perception check to determine whether the illusion is real or not."
+			]
+		},
+		{
+			"name": "Flash Bang",
+			"entries": [
+				"When the illusion is defeated, all hostile creatures within 40 ft. must succeed on a {@dc 15} Constitution saving throw or take 5 ({@damage 1d10}) force damage. On a success, take half as much damage."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Whirl of Illusion",
+			"entries": [
+				"A creature within 120 ft. and line of sight takes 3 force damage."
+			]
+		}
+	],
+	"traitTags": [
+		"Immutable Form",
+		"Magic Resistance"
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"O"
+	]
+}
+,
+{
+	"name": "Jandice Barov",
+	"isNamedCreature": true,
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": "undead",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		13
+	],
+	"hp": {
+		"average": 120,
+		"formula": "16d8 + 48"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 11,
+	"dex": 12,
+	"con": 16,
+	"int": 19,
+	"wis": 14,
+	"cha": 14,
+	"save": {
+		"int": "+8",
+		"wis": "+6",
+		"cha": "+6"
+	},
+	"skill": {
+		"perception": "+6"
+	},
+	"passive": 16,
+	"resist": [
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from nonmagical attacks",
+			"cond": true
+		}
+	],
+	"immune": [
+		"necrotic",
+		"poison"
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"grappled",
+		"paralyzed",
+		"petrified",
+		"poisoned",
+		"prone",
+		"restrained",
+		"stunned"
+	],
+	"languages": [
+		"Common"
+	],
+	"cr": "8",
+	"trait": [
+		{
+			"name": "Immutable Form",
+			"entries": [
+				"Jandice is immune to any spell or effect that would alter her form."
+			]
+		},
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"Jandice has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"name": "Phantasmal Images",
+			"entries": [
+				"When Jandice is reduced to 40 or 80 hit points, she immediately vanishes from sight and any effects on her end. She reappears with 9 ({@dice 2d4 + 4}) Phantasmal Images distributed through the room. While these images are active, she can only use Whirl of Illusion as her action.",
+				"After she has taken 15 damage since this effect started, the remaining Phantasmal Images dissipate."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Wondrous Rapidity",
+			"entries": [
+				"All creatures in a 45 ft. cone must succeed on a {@dc 15} Constitution saving throw or take 17 ({@damage 5d6}) force damage. On a success, take half has much damage. If at least 2 creatures fail this throw, Jandice may use a bonus"
+			]
+		},
+		{
+			"name": "Gravity Flux {@recharge 5}",
+			"entries": [
+				"A 20 ft. field of shadow magic erupts within 100 ft. When a creature enters this area for the first time on a turn or starts its turn there, it takes 11 ({@damage 2d10}) necrotic damage plus 11 ({@damage 2d10}) force damage, is knocked back a number of feet equal to the damage it took, and is Blinded until the end of its next turn. This field lasts for 30 seconds and only one may be active at a time."
+			]
+		},
+		{
+			"name": "Whirl of Illusion",
+			"entries": [
+				"A creature within 120 ft. and line of sight takes 3 force damage."
+			]
+		}
+	],
+	"traitTags": [
+		"Immutable Form",
+		"Magic Resistance"
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"N",
+		"O"
+	]
+}
+,
+{
+	"name": "Animated Tome",
+	"source": "",
+	"page": 0,
+	"size": "S",
+	"type": "construct",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		11
+	],
+	"hp": {
+		"average": 16,
+		"formula": "5d6"
+	},
+	"speed": {
+		"walk": 0,
+		"fly": {
+			"number": 50,
+			"condition": "it can hover."
+		},
+		"canHover": true
+	},
+	"str": 8,
+	"dex": 18,
+	"con": 11,
+	"int": 20,
+	"wis": 14,
+	"cha": 6,
+	"passive": 12,
+	"cr": "1/4",
+	"trait": [
+		{
+			"name": "Burn (Antonidas' Self Help Guide to Standing in Fire only)",
+			"entries": [
+				"Any hostile targets that start their turn or come within 5 ft. of the tome take 5 ({@damage 2d4}) fire damage."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Arcane Bomb (The Anarchist Arcanist only)",
+			"entries": [
+				"Ranged Spell",
+				"Attack: {@hit 7} to hit, range 120 ft., one target. {@h}4 ({@damage 1d8}) force damage and all targets within 5 ft. of the target must succeed on a {@dc 15} Dexterity saving throw or take 3 ({@damage 1d6}) force damage.",
+				"Shadow Bolt (Wander's Colossal Book of Shadow Puppets only). Ranged Spell Attack: {@hit 7} to hit, range 120 ft., one target. {@h}5 ({@damage 1d10}) necrotic damage"
+			]
+		}
+	],
+	"damageTags": [
+		"F",
+		"N",
+		"O"
+	]
+}
+,
+{
+	"name": "Chillheart's Phylactery",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": "construct",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		17
+	],
+	"hp": {
+		"average": 68,
+		"formula": "8d8 + 32"
+	},
+	"speed": {
+		"walk": 0
+	},
+	"str": 11,
+	"dex": 6,
+	"con": 18,
+	"int": 20,
+	"wis": 14,
+	"cha": 16,
+	"save": {
+		"con": "+7",
+		"int": "+8",
+		"wis": "+5",
+		"cha": "+6"
+	},
+	"passive": 12,
+	"resist": [
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from nonmagical attacks",
+			"cond": true
+		}
+	],
+	"immune": [
+		"cold",
+		"necrotic"
+	],
+	"languages": [
+		"Common"
+	],
+	"cr": "8",
+	"trait": [
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"The phylactery has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"name": "Soul Barrier",
+			"entries": [
+				"The phylactery is immune to damage while",
+				"Instructor Chillheart's physical body is alive."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Animate Tomes",
+			"entries": [
+				"Fragments of Chillheart's soul animate 3 ({@dice 2d2}) tomes of magic around the Library. Roll from the table below to determine the tomes."
+			]
+		}
+	],
+	"traitTags": [
+		"Magic Resistance"
+	],
+	"languageTags": [
+		"C"
+	]
+}
+,
+{
+	"name": "Instructor Chillheart",
+	"isNamedCreature": true,
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": "undead",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		14
+	],
+	"hp": {
+		"average": 105,
+		"formula": "14d8 + 42"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 11,
+	"dex": 14,
+	"con": 16,
+	"int": 19,
+	"wis": 14,
+	"cha": 16,
+	"save": {
+		"con": "+6",
+		"int": "+7",
+		"wis": "+5",
+		"cha": "+6"
+	},
+	"passive": 12,
+	"resist": [
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from nonmagical attacks",
+			"cond": true
+		}
+	],
+	"immune": [
+		"cold",
+		"necrotic"
+	],
+	"languages": [
+		"Common"
+	],
+	"cr": "8",
+	"trait": [
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"Chillheart has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"name": "Ice Wall",
+			"entries": [
+				"Chillheart summons a massive ice wall that covers the eastern wall of The Reliquary. At the start of her turns, the ice wall expands 5 ft. west, covering the entire length and height of the room.",
+				"When a creature touches this wall, it is dealt 44 ({@damage 8d10}) cold damage. This wall melts when",
+				"Chillheart's physical body dies,"
+			]
+		},
+		{
+			"name": "Phylactery",
+			"entries": [
+				"When Instructor Chillheart's physical body dies, the foul magic that animated her escapes back to her phylactery."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Instructor Chillheart makes two different attacks."
+			]
+		},
+		{
+			"name": "Touch of the Grave",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage plus 5 ({@damage 1d10}) cold damage."
+			]
+		},
+		{
+			"name": "Wrack Soul",
+			"entries": [
+				"A hostile creature within 60 ft. must succeed on a {@dc 15} Wisdom saving throw or are cursed. At the end of their next turn they take 9 ({@damage 2d8}) necrotic damage and another hostile creature must succeed on the same saving throw or be cursed by Wrack Soul."
+			]
+		},
+		{
+			"name": "Ice Wrath",
+			"entries": [
+				"A hostile creature within 60 ft. is wreathed in ice for 18 seconds. Any creatures that start their turn or come within 10 ft. of the target take 5 ({@damage 1d10}) cold damage and have their speed reduced by 10 ft."
+			]
+		},
+		{
+			"name": "Frigid Grasp",
+			"entries": [
+				"A patch of ice explodes underneath a target within 60 ft. All creatures within 10 ft. of the target must succeed on a {@dc 15} Dexterity saving throw or take 10 ({@damage 3d6}) cold damage. On a success, take half as much damage."
+			]
+		}
+	],
+	"traitTags": [
+		"Magic Resistance"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"C",
+		"N",
+		"S"
+	],
+	"miscTags": [
+		"MW"
+	]
+}
+,
+{
+	"name": "Scholomance Student",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"human"
+		]
+	},
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		13
+	],
+	"hp": {
+		"average": 45,
+		"formula": "7d8 + 14"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 11,
+	"dex": 12,
+	"con": 14,
+	"int": 16,
+	"wis": 12,
+	"cha": 14,
+	"passive": 11,
+	"resist": [
+		"fire",
+		"necrotic"
+	],
+	"languages": [
+		"Common"
+	],
+	"cr": "2",
+	"action": [
+		{
+			"name": "Shadow Bolt",
+			"entries": [
+				"{@atk rs} {@hit 5} to hit, range 120 ft., one target. {@h}11 ({@damage 2d10}) necrotic damage."
+			]
+		},
+		{
+			"name": "Shadow Nova",
+			"entries": [
+				"A wave of necrotic energy erupts from a target within 60 ft. All creatures within 10 ft. of the target must succeed on a {@dc 13} Wisdom saving throw or take 10 ({@damage 3d6}) necrotic damage. On a success, take half as much damage.",
+				"Fire Breath Potion (Recharges on a Short or Long"
+			]
+		},
+		{
+			"name": "Rest)",
+			"entries": [
+				"All creatures within 15 ft. and in front of the student must succeed on a {@dc 15} Dexterity saving throw or take 18 ({@damage 4d8}) fire damage. On a success, take half as much damage."
+			]
+		}
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"F",
+		"N"
+	]
+}
+,
+{
+	"name": "Scholomance Neophyte",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"high elf"
+		]
+	},
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		13
+	],
+	"hp": {
+		"average": 52,
+		"formula": "7d8 + 21"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 11,
+	"dex": 12,
+	"con": 16,
+	"int": 16,
+	"wis": 12,
+	"cha": 12,
+	"passive": 11,
+	"resist": [
+		"cold",
+		"necrotic"
+	],
+	"languages": [
+		"Common"
+	],
+	"cr": "2",
+	"trait": [
+		{
+			"name": "Necrotic Pact",
+			"entries": [
+				"When the student or an undead creature summoned by it takes damage, the damage is divided evenly between the student and all of its summoned undead creatures."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Shadow Incineration",
+			"entries": [
+				"{@atk rs} {@hit 5} to hit, range 120 ft., one target. {@h}5 ({@damage 1d10}) necrotic damage plus 5 ({@damage 1d10}) fire damage."
+			]
+		},
+		{
+			"name": "Bound Servant",
+			"entries": [
+				"The student summons a friendly",
+				"Boneguard within 20 ft. which shares its initiative."
+			]
+		}
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"F",
+		"N"
+	]
+}
+,
+{
+	"name": "Scholomance Acolyte",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"human"
+		]
+	},
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		13
+	],
+	"hp": {
+		"average": 45,
+		"formula": "7d8 + 14"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 11,
+	"dex": 12,
+	"con": 14,
+	"int": 16,
+	"wis": 12,
+	"cha": 14,
+	"passive": 11,
+	"resist": [
+		"cold",
+		"necrotic"
+	],
+	"languages": [
+		"Common"
+	],
+	"cr": "2",
+	"trait": [
+		{
+			"name": "Unbound",
+			"entries": [
+				"When the student would be reduced to 0 hit points, its spirit separates from its body. During this effect, it is immune to damage and can only use Spirit Barrage as an action. At the end of its next turn, the spirit and student are defeated."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Shadow Bolt",
+			"entries": [
+				"{@atk rs} {@hit 5} to hit, range 120 ft., one target. {@h}11 ({@damage 2d10}) necrotic damage."
+			]
+		},
+		{
+			"name": "Shatter Soul",
+			"entries": [
+				"A creature within 60 ft. must succeed on a {@dc 13} Wisdom saving throw or take 10 ({@damage 3d6}) necrotic damage and become Fatigued for 1 minute. On a success, take half as much damage."
+			]
+		},
+		{
+			"name": "Spirit Barrage (only when Unbound)",
+			"entries": [
+				"All hostile creatures in line of sight within 120 ft. must succeed on a {@dc 13} Dexterity saving throw or take 11 ({@damage 2d10}) necrotic damage."
+			]
+		}
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"N"
+	]
+}
+,
+{
+	"name": "Risen Guard",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": "undead",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		15
+	],
+	"hp": {
+		"average": 75,
+		"formula": "10d8 + 30"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 18,
+	"dex": 12,
+	"con": 16,
+	"int": 6,
+	"wis": 10,
+	"cha": 5,
+	"skill": {
+		"perception": "+4"
+	},
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"passive": 14,
+	"immune": [
+		"poison"
+	],
+	"vulnerable": [
+		"bludgeoning"
+	],
+	"conditionImmune": [
+		"exhaustion",
+		"poisoned"
+	],
+	"languages": [
+		"understands Common but can't speak"
+	],
+	"cr": "3",
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The skeleton makes two attacks."
+			]
+		},
+		{
+			"name": "Unholy Blade",
+			"entries": [
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage and the target's AC is reduced by 1 for 1 minute. This effect stacks."
+			]
+		},
+		{
+			"name": "Impale",
+			"entries": [
+				"{@atk rw} {@hit 3} to hit, range",
+				"30/120 ft., one target. {@h}14 ({@damage 3d8 + 1}) piercing damage and the target's speed is reduced to 10 ft."
+			]
+		}
+	],
+	"senseTags": [
+		"D"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C",
+		"CS"
+	],
+	"damageTags": [
+		"P",
+		"S"
+	],
+	"miscTags": [
+		"MW",
+		"RW"
+	]
+}
+,
+{
+	"name": "Reanimated Corpse",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": "undead",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		13
+	],
+	"hp": {
+		"average": 27,
+		"formula": "5d8 + 5"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 14,
+	"dex": 14,
+	"con": 12,
+	"int": 6,
+	"wis": 10,
+	"cha": 6,
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"passive": 10,
+	"immune": [
+		"poison"
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"poisoned"
+	],
+	"languages": [
+		"understands Common but can't speak"
+	],
+	"cr": "1",
+	"trait": [
+		{
+			"name": "Dark Plague",
+			"entries": [
+				"The zombie emits a cloud of disease in a 5-foot sphere around it. When a creature enters this area for the first time on a turn or starts its turn there, it must succeed on a {@dc 13} Constitution saving throw or take 7 ({@damage 2d6}) poison damage. On a success, it takes half as much damage."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Strike",
+			"entries": [
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+			]
+		}
+	],
+	"senseTags": [
+		"D"
+	],
+	"languageTags": [
+		"C",
+		"CS"
+	],
+	"damageTags": [
+		"I",
+		"P"
+	],
+	"miscTags": [
+		"AOE",
+		"MW"
+	]
+}
+,
+{
+	"name": "Krastinovian Carver",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": "undead",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		14
+	],
+	"hp": {
+		"average": 52,
+		"formula": "8d8 + 16"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 16,
+	"dex": 14,
+	"con": 14,
+	"int": 12,
+	"wis": 14,
+	"cha": 8,
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"passive": 12,
+	"immune": [
+		"necrotic",
+		"poison"
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"poisoned"
+	],
+	"languages": [
+		"Common"
+	],
+	"cr": "2",
+	"trait": [
+		{
+			"name": "Boiling Bloodthirst",
+			"entries": [
+				"The carver starts with one stack of this effect. For each stack, all damage dealt by and dealt to the carver is increased by 1. When the carver is defeated, all Krastinovian Carvers within 25 ft. of it gain a stack of Boiling Bloodthirst for each stack it had on death."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The carver makes two attacks."
+			]
+		},
+		{
+			"name": "Bloody Cleaver",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+			]
+		}
+	],
+	"senseTags": [
+		"D"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"S"
+	],
+	"miscTags": [
+		"MW"
+	]
+}
+,
+{
+	"name": "Flesh Horror",
+	"source": "",
+	"page": 0,
+	"size": "L",
+	"type": "construct",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		11
+	],
+	"hp": {
+		"average": 95,
+		"formula": "10d10 + 40"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 20,
+	"dex": 12,
+	"con": 19,
+	"int": 6,
+	"wis": 10,
+	"cha": 5,
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"passive": 10,
+	"resist": [
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from nonmagical attacks",
+			"cond": true
+		}
+	],
+	"immune": [
+		"necrotic",
+		"poison"
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"frightened",
+		"paralyzed",
+		"petrified",
+		"poisoned"
+	],
+	"languages": [
+		"understands Common but can't speak"
+	],
+	"cr": "5",
+	"trait": [
+		{
+			"name": "Immutable Form",
+			"entries": [
+				"The golem is immune to any spell or effect that would alter its form."
+			]
+		},
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"The golem has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"name": "Magic Weapons",
+			"entries": [
+				"The golem's attacks are magical."
+			]
+		},
+		{
+			"name": "Meat Grafts",
+			"entries": [
+				"The golem has four Meat Grafts attached it. These grafts have 10 hit points each but otherwise share the Flesh Horror's stats. The grafts can only be damaged if they are the target of an attack. A creature can use a bonus action to make a {@dc 14} Perception check to identify one graft so it can be targeted.",
+				"At the start of the golem's turn, it regains 10 hit points for each Meat Graft attached to it. When a graft is defeated, the golem's maximum hit points are reduced by 20."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The golem makes two attacks."
+			]
+		},
+		{
+			"name": "Slam",
+			"entries": [
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d12 + 5}) bludgeoning damage."
+			]
+		}
+	],
+	"traitTags": [
+		"Immutable Form",
+		"Magic Resistance",
+		"Magic Weapons"
+	],
+	"senseTags": [
+		"D"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C",
+		"CS"
+	],
+	"damageTags": [
+		"B"
+	],
+	"miscTags": [
+		"MW"
+	]
+}
+,
+{
+	"name": "Failed Student",
+	"isNamedCreature": true,
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": "undead",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		12
+	],
+	"hp": {
+		"average": 18,
+		"formula": "4d8"
+	},
+	"speed": {
+		"walk": 20
+	},
+	"str": 16,
+	"dex": 14,
+	"con": 11,
+	"int": 8,
+	"wis": 10,
+	"cha": 4,
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"passive": 10,
+	"immune": [
+		"necrotic",
+		"poison"
+	],
+	"conditionImmune": [
+		"exhaustion",
+		"poisoned"
+	],
+	"languages": [
+		"understands Common but can't speak"
+	],
+	"cr": "1/2",
+	"trait": [
+		{
+			"name": "Student of Scholomance",
+			"entries": [
+				"Failed students gain extra abilities based on what room they are found in."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Slam",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+			]
+		}
+	],
+	"senseTags": [
+		"D"
+	],
+	"languageTags": [
+		"C",
+		"CS"
+	],
+	"damageTags": [
+		"B"
+	],
+	"miscTags": [
+		"MW"
+	]
+}
