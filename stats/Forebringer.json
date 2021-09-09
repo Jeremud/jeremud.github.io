@@ -1403,6 +1403,60 @@
                 "current": "5 ft.",
                 "max": "",
                 "id": "-Mj6ZLUz4lC1i1FhgqW4"
+            },
+            {
+                "name": "repeating_npcaction_-Mj7nYFgJ4IP5W3QlyMz_name",
+                "current": "Multiattack",
+                "max": "",
+                "id": "-Mj7n_9ZVDB_kQYiy_G2"
+            },
+            {
+                "name": "_reporder_repeating_npcaction",
+                "current": "-Mj7nYFgJ4IP5W3QlyMz,-Mj600RLFNsZHMLw7zF3,-Mj6WP2gymff6IlZJ8RG",
+                "max": "",
+                "id": "-Mj7naeJNBzt5k-1m4KM"
+            },
+            {
+                "name": "repeating_npcaction_-Mj7nYFgJ4IP5W3QlyMz_description",
+                "current": "The Forebringer can make a number of attacks equal to your proficiency - 1",
+                "max": "",
+                "id": "-Mj7nespRLo1uLWtrW9Y"
+            },
+            {
+                "name": "repeating_npcaction_-Mj7nYFgJ4IP5W3QlyMz_attack_tohitrange",
+                "current": "+0",
+                "max": "",
+                "id": "-Mj7neuitJjbBuZmqjs8"
+            },
+            {
+                "name": "repeating_npcaction_-Mj7nYFgJ4IP5W3QlyMz_attack_onhit",
+                "current": "",
+                "max": "",
+                "id": "-Mj7neujmpgsT-wOLsa8"
+            },
+            {
+                "name": "repeating_npcaction_-Mj7nYFgJ4IP5W3QlyMz_damage_flag",
+                "current": "",
+                "max": "",
+                "id": "-Mj7neujmpgsT-wOLsa9"
+            },
+            {
+                "name": "repeating_npcaction_-Mj7nYFgJ4IP5W3QlyMz_attack_crit",
+                "current": "",
+                "max": "",
+                "id": "-Mj7neukWvOqhwkt5CyD"
+            },
+            {
+                "name": "repeating_npcaction_-Mj7nYFgJ4IP5W3QlyMz_attack_crit2",
+                "current": "",
+                "max": "",
+                "id": "-Mj7neulNpGaqNyApMgS"
+            },
+            {
+                "name": "repeating_npcaction_-Mj7nYFgJ4IP5W3QlyMz_rollbase",
+                "current": "@{wtype}&{template:npcaction} @{npc_name_flag} {{rname=@{name}}} {{description=@{show_desc}}} @{charname_output}",
+                "max": "",
+                "id": "-Mj7neumOfxC7hhU_SPI"
             }
         ],
         "abilities": [
