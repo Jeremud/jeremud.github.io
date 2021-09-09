@@ -8,7 +8,7 @@
         "bio": "",
         "gmnotes": "",
         "defaulttoken": "{\"represents\":\"-Mj600PnUSiKIg0DTKvT\",\"name\":\"Dire Wolf\",\"imgsrc\":\"https://5etools-mirror-1.github.io/img/MM/Dire Wolf.png?1631131539234\",\"width\":140,\"height\":140,\"compact_bar\":\"standard\",\"light_hassight\":true}",
-        "tags": "[\"creature-beast\",\"creature-monster-manual\",\"creature-large\",\"creature-forest\",\"creature-hill\",\"creature\"]",
+        "tags": "[\"creature-beast\",\"creature-cr-1\",\"creature-monster-manual\",\"creature-large\",\"creature-forest\",\"creature-hill\",\"creature\"]",
         "controlledby": "",
         "inplayerjournals": "",
         "attribs": [
@@ -68,7 +68,7 @@
             },
             {
                 "name": "whispertoggle",
-                "current": "",
+                "current": "/w gm ",
                 "max": "",
                 "id": "-Mj600QnFcOdGHIVgj3U"
             },
@@ -608,7 +608,7 @@
             },
             {
                 "name": "repeating_npcaction_-Mj600RLFNsZHMLw7zF3_description",
-                "current": "[[2d8]] Slashing from Charge.",
+                "current": "If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
                 "max": "",
                 "id": "-Mj600RU4bCjNQ6OFIay"
             },
@@ -1310,13 +1310,13 @@
             },
             {
                 "name": "repeating_npctrait_-Mj6ToeVG2ao-LvT3j5c_name",
-                "current": "Charge",
+                "current": "Ancient Magic",
                 "max": "",
                 "id": "-Mj6TsLsDmiCV7JI9PmZ"
             },
             {
                 "name": "repeating_npctrait_-Mj6ToeVG2ao-LvT3j5c_description",
-                "current": "If the Forebringer moves at least 20 feet straight toward a target and then hits it with a bite attack on the same turn, the target takes an extra 9 (2d8) slashing damage. If the target is a creature, it must succeed on a DC 12 + Proficiency Bonus Strength saving throw or be knocked prone.",
+                "current": "The Forebringer's attacks are counted as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
                 "max": "",
                 "id": "-Mj6U7X-EAqpz6wOhC-I"
             },
@@ -1370,7 +1370,7 @@
             },
             {
                 "name": "repeating_npcaction_-Mj6WP2gymff6IlZJ8RG_description",
-                "current": "Leap up to 30 ft. and latch on to a target, restraining them until the end or your next turn and forcing them to make a DC 12 + Proficiency Bonus Strength saving throw and also be stunned.",
+                "current": "Leap up to 30 ft. and latch on to a target, restraining them until the end or your next turn and forcing them to make a DC 15 Strength saving throw and also be stunned.",
                 "max": "",
                 "id": "-Mj6X2OLb3vUigrIycG3"
             },
