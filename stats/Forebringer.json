@@ -26,7 +26,7 @@
             },
             {
                 "name": "npc_options-flag",
-                "current": "0",
+                "current": "on",
                 "max": "",
                 "id": "-Mj600QjvmFqXTV_2yuz"
             },
@@ -1418,7 +1418,7 @@
             },
             {
                 "name": "repeating_npcaction_-Mj7nYFgJ4IP5W3QlyMz_description",
-                "current": "The Forebringer can make a number of attacks equal to your proficiency - 1",
+                "current": "The Forebringer can make a number of attacks equal to your proficiency bonus - 1.",
                 "max": "",
                 "id": "-Mj7nespRLo1uLWtrW9Y"
             },
