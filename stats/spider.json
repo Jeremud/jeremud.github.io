@@ -1,0 +1,65 @@
+{
+	"siteVersion": "1.136.0",
+	"monster": [
+		{
+			"name": "Mechanical Arachnid",
+			"source": "",
+			"page": 0,
+			"size": "S",
+			"type": "construct",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "50"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 1,
+			"wis": 1,
+			"cha": 1,
+			"passive": 12,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"can make two melee attacks"
+					]
+				},
+				{
+					"name": "Poison Pince",
+					"entries": [
+						"Melee Weapon Attack {@hit 5} to hit, reach 5ft, one target. {@h}6 ({@damage 1d8 + 3}) piercing damage  The target must make a {@dc 15} Constitution save or take [[{@dice 1d10}]] poison damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			]
+		}
+	]
+}
